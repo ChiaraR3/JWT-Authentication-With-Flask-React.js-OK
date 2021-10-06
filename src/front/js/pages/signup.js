@@ -18,7 +18,7 @@ export const Signup = () => {
 			return;
 		}
 		console.log("hasta aqui");
-		const response = await fetch("https://3001-harlequin-lungfish-0yoeppnf.ws-eu18.gitpod.io/api/signup", {
+		const response = await fetch(process.env.BACKEND_URL + "/api/signup", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json"
